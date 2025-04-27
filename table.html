@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 20px;
+      }
+      .table {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border: 1px solid black;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      .table-header,
+      .table-row {
+        display: flex;
+        background: #64ee2e;
+        font-weight: bold;
+      }
+      .table-row{
+        background: #fff;
+      }
+      .table-header div, .table-row div{
+        flex: 1;
+        padding: 12px 10px;
+        border-bottom: 1px solid #ccc;
+        text-align: center;
+      }
+      @media(max-width:768px){
+        .table-header{
+            display: none;
+        }
+        .table-row{
+            flex-direction: column;
+            border: 5px dotted yellowgreen;
+            margin-bottom: 8px;
+        }
+        .table-row div{
+            border-bottom: none;
+            text-align: left;
+            padding: 10px;
+            position: relative;
+        }
+        .table-row div::before{
+          content: attr(data-label);
+          font-weight: bolder;
+          display: block;
+          margin-bottom: 5px;
+          color: #555;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="table">
+      <div class="table-header">
+        <div>Name</div>
+        <div>Email</div>
+        <div>Phone</div>
+      </div>
+      <div class="table-row">
+        <div data-label="Name">Susan</div>
+        <div data-label="Email">Susan@gmail.com</div>
+        <div data-label="Phone">0009099</div>
+      </div>
+      <div class="table-row">
+        <div data-label="Name">Mijash</div>
+        <div data-label="Email">Mijash@gmail</div>
+        <div data-label="Phone">0009010</div>
+      </div>
+    </div>
+
+    <hr>
+    <hr>
+
+    <table border="1">
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <td>susan</td>
+        <td>22</td>
+        <td>Nepal</td>
+      </tr>
+      <tr>
+        <td>mijash</td>
+        <td>21</td>
+        <td>Nepal</td>
+      </tr>
+      <tr>
+        <td>paju</td>
+        <td>32</td>
+        <td>Japan</td>
+      </tr>
+    </table>
+    
+  </body>
+</html>

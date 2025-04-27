@@ -1,0 +1,55 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px;
+    background: #f9f9f9;
+}
+h1,h2{
+    color: #333;
+}
+
+/* no.1 start*/
+.styled-image{
+    width: 300px;
+    height: auto;
+    border: 4px solid #4CAF50;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 30px;
+    transition: transform 0.3s;
+}
+.styled-image:hover{
+    transform: scale(1.05);
+}
+/* no.1 end*/
+
+
+/* no.2 start*/
+.background-image{
+width: 100%;
+max-width: 600px;
+height: 300px;
+background-image: url('/images/sales3.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+border-radius: 12px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* no.2 end*/
+
+
+
+/* no.3 start*/
+.fit-image{
+width: 400px;
+height: 300px;
+object-fit: cover;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+margin-bottom: 20px;
+transition: transform 0.3s;
+}
+.fit-image:hover{
+transform: scale(1.05);
+}
+/* no.3 end*/

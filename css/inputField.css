@@ -1,0 +1,45 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f0f2f5;
+    padding: 40px;
+    line-height: 1.6;
+}
+h2{
+    text-align: center;
+    color: #333;
+}
+form{
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.field{
+    margin-bottom: 20px;
+}
+label{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+input, textarea, select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #0f6636;
+}
+input[type="checkbox"],
+input[type="radio"],
+input[type="color"],
+input[type="range"]
+{
+    width: auto;
+}
+.note{
+    font-style: italic;
+    color: #555;
+    margin-top: 5px;
+}
